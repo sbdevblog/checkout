@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright (c) sbdevblog (http://www.sbdevblog.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sbcheckout>
+            <additional_validation>
+                <enable>1</enable>
+                <pobox_validation_regex><![CDATA[^([ A-Za-z0-9_:/#,]*)((((((P(ost(al)?)?)|(Mail(ing)?)))([ \\./#-]*)((((O|0)(ffice)?)|(B(ox|in)?))))|(B(ox|in)?))([ \\./#-]*))(B(ox|in)?)?(([ \\./#-]*)((n(um(ber)?)?)|no)?)([ \\.:/#-]*)([0-9]+)([ A-Za-z0-9_:/#,]*)$
+                ]]></pobox_validation_regex>
+            </additional_validation>
+        </sbcheckout>
+    </default>
+</config>

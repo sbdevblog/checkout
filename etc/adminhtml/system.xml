@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright (c) sbdevblog (http://www.sbdevblog.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sbdevblog" translate="label" sortOrder="10">
+            <label>SB Dev Blog</label>
+        </tab>
+        <section id="sbcheckout" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>SB Dev Blog</label>
+            <tab>sbdevblog</tab>
+            <resource>SbDevBlog_Config::sbdevblog_config</resource>
+            <group id="additional_validation" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Additional Validation</label>
+                <field id="enable" translate="label" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1"
+                       type="select">
+                    <label>Enable Product Availability Check</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="pobox_validation_regex" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1"
+                       showInStore="1" type="text">
+                    <label>POBOX Regular Expression</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
