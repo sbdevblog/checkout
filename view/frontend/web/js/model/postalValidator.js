@@ -1,3 +1,7 @@
+/**
+ * @copyright Copyright (c) sbdevblog (http://www.sbdevblog.com)
+ */
+
 define(
     [
         'jquery',
