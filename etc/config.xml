@@ -10,8 +10,6 @@
         <sbcheckout>
             <additional_validation>
                 <enable>1</enable>
-                <pobox_validation_regex><![CDATA[^([ A-Za-z0-9_:/#,]*)((((((P(ost(al)?)?)|(Mail(ing)?)))([ \\./#-]*)((((O|0)(ffice)?)|(B(ox|in)?))))|(B(ox|in)?))([ \\./#-]*))(B(ox|in)?)?(([ \\./#-]*)((n(um(ber)?)?)|no)?)([ \\.:/#-]*)([0-9]+)([ A-Za-z0-9_:/#,]*)$
-                ]]></pobox_validation_regex>
             </additional_validation>
         </sbcheckout>
     </default>

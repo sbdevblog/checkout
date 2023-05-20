@@ -34,14 +34,11 @@ class ValidationConfigurationService
     /**
      * Get Validation Configuration
      *
-     * @return array
+     * @return bool
      */
-    public function getValidationConfig(): array
+    public function getValidationStatus():bool
     {
-        return [
-            "validation_enable" => $this->getConfig(self::ENABLE_VALIDATION_PATH),
-            "validation_regrex" => $this->getConfig(self::VALIDATION_REGREX_PATH)
-        ];
+        return $this->getConfig(self::ENABLE_VALIDATION_PATH);
     }
 
     /**

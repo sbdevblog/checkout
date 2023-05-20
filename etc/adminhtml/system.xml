@@ -12,7 +12,7 @@
         </tab>
         <section id="sbcheckout" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label>SB Dev Blog</label>
+            <label>Checkout Blog</label>
             <tab>sbdevblog</tab>
             <resource>SbDevBlog_Config::sbdevblog_config</resource>
             <group id="additional_validation" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
@@ -22,10 +22,6 @@
                        type="select">
                     <label>Enable Product Availability Check</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
-                <field id="pobox_validation_regex" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1"
-                       showInStore="1" type="text">
-                    <label>POBOX Regular Expression</label>
                 </field>
             </group>
         </section>

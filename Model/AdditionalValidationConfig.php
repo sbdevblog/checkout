@@ -30,12 +30,8 @@ class AdditionalValidationConfig implements ConfigProviderInterface
      */
     public function getConfig()
     {
-        $validationConfiguration = $this->validationConfigurationService->getValidationConfig();
-        $validationConfig = [
-            "pobox_validation_enabled" => $validationConfiguration["validation_enable"],
-            "pobox_validation_regrex" => $validationConfiguration["validation_regrex"]
+        return [
+            "pobox_validation_enabled" => $this->validationConfigurationService->getValidationStatus()
         ];
-
-        return $validationConfig;
     }
 }
