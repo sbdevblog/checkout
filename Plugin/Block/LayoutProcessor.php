@@ -68,6 +68,9 @@ class LayoutProcessor
                 }
             }
         }
+        $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']
+        ['children']['shippingAddress']['children']['shipping-address-fieldset']
+        ['children']['street']['sortOrder'] = 5;
         return $jsLayout;
     }
 }
