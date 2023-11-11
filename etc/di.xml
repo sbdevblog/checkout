@@ -10,11 +10,17 @@
         <plugin name="validate_pobox_Checkout" type="SbDevBlog\Checkout\Plugin\Block\LayoutProcessor" sortOrder="100"/>
     </type>
 
-    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
-            <argument name="columns" xsi:type="array">
-                <item name="sbdevblog_comment" xsi:type="string">sales_order.sbdevblog_comment</item>
+            <argument name="collections" xsi:type="array">
+                <item name="sales_order_grid_data_source" xsi:type="string">SbDevBlog\Checkout\Model\ResourceModel\Order\Grid\Collection</item>
             </argument>
         </arguments>
-    </virtualType>
+    </type>
+    <type name="SbDevBlog\Checkout\Model\ResourceModel\Order\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">sales_order_grid</argument>
+            <argument name="resourceModel" xsi:type="string">Magento\Sales\Model\ResourceModel\Order</argument>
+        </arguments>
+    </type>
 </config>

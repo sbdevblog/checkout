@@ -20,8 +20,7 @@ class AdditionalValidationConfig implements ConfigProviderInterface
      */
     public function __construct(
         ValidationConfigurationService $validationConfigurationService
-    )
-    {
+    ) {
         $this->validationConfigurationService = $validationConfigurationService;
     }
 
