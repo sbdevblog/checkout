@@ -24,6 +24,12 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
             </group>
+            <group id="notice" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1">
+                <field id="notice" translate="label" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1"
+                       type="text">
+                    <label>SbDevBlog Notice</label>
+                </field>
+            </group>
         </section>
     </system>
 </config>

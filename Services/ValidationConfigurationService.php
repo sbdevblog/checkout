@@ -14,6 +14,8 @@ class ValidationConfigurationService
     private const ENABLE_VALIDATION_PATH = "enable";
     private const VALIDATION_REGREX_PATH = "pobox_validation_regex";
 
+    private const SBDEVBLOG_NOTICE = "sbcheckout/notice/notice";
+
     /**
      * @var ScopeConfigInterface
      */
@@ -49,5 +51,15 @@ class ValidationConfigurationService
     private function getConfig(string $path)
     {
         return $this->scopeConfig->getValue(self::ADDITIONAL_VALIDATION_PATH . $path, ScopeInterface::SCOPE_STORE);
+    }
+
+    /**
+     * Get SBDevBlog Notice
+     *
+     * @return string
+     */
+    public function getNotice():string
+    {
+        return (string)$this->scopeConfig->getValue(self::SBDEVBLOG_NOTICE, ScopeInterface::SCOPE_STORE);
     }
 }

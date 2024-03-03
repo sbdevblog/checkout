@@ -11,6 +11,9 @@
             <additional_validation>
                 <enable>1</enable>
             </additional_validation>
+            <notice>
+                <notice>SbDevBlog Notice Demo</notice>
+            </notice>
         </sbcheckout>
     </default>
 </config>
